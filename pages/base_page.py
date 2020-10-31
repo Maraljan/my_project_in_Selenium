@@ -1,7 +1,7 @@
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.by import By
-from selenium.webdriver import Chrome, Firefox
 from typing import Union
+
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver import Chrome, Firefox
 
 from pages.locators import MainPageLocators
 
@@ -24,4 +24,3 @@ class BasePage:
         except NoSuchElementException:
             return False
         return True
-
