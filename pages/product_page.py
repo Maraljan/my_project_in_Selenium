@@ -7,7 +7,6 @@ class ProductPage(BasePage):
     def add_basket(self):
         button = self.browser.find_element(*ProductPageLocators.BASKET)
         button.click()
-        self.solve_quiz_and_get_code()
 
     def check_message(self):
         assert self.browser.find_element(*ProductPageLocators.TITLE).text == \
