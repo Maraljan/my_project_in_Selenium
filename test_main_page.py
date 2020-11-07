@@ -1,5 +1,3 @@
-import time  # TODO: useless import
-
 import pytest
 
 from pages.basket_page import BasketPage
@@ -34,6 +32,3 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     basket_page = BasketPage(browser, page.browser.current_url)
     basket_page.check_is_product_empty()
     basket_page.check_is_basket_empty()
-
-
-
