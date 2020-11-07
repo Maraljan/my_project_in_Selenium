@@ -1,4 +1,4 @@
-import time
+import time  # TODO: useless import
 
 import pytest
 

@@ -22,6 +22,10 @@ class TestLoginFromProductPage:
         page.open()
         page.should_be_login_link()
 
+    def test_guest_can_add_product_to_basket(self, browser):
+        product = ProductPage(browser, self.link)
+        product.open()
+
 
 def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     page = ProductPage(browser, LOGIN_URL)
@@ -54,8 +58,3 @@ class TestUserAddToBasketFromProductPage:
         product = ProductPage(browser, self.link)
         product.open()
         product.add_basket()
-
-
-
-
-

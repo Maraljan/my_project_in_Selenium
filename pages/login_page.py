@@ -24,6 +24,3 @@ class LoginPage(BasePage):
         password1.send_keys(password)
         password2 = self.browser.find_element(*BasePageLocators.PASSWORD2)
         password2.send_keys(password)
-
-
-

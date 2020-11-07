@@ -32,4 +32,3 @@ class BasketPageLocators:
     BASKET_TO_CLICK = (By.CSS_SELECTOR, ".hidden-xs > span > a")
     EMPTY_PRODUCT = (By.CSS_SELECTOR, ".hidden-xs > div")
     EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner > p")
-
